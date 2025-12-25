@@ -1,5 +1,5 @@
 arr = [7, 4, 9, 5, 3, 8, 2, 1]
-print("cheking": arr)
+print("cheking", arr)
 for i in range(len(arr)):
     for j in range(len(arr)):
         if arr[j] > arr[j + 1]:
