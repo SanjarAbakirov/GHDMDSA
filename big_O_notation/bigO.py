@@ -37,4 +37,9 @@ my_set = {1, 2, 3, 4, 5}
 my_dict['grape'] = 15  # insert
 value = my_dict['apple']  # receiving 5
 exists = 'banana' in my_dict
+# print(my_dict)
+
+my_set.add(6)  # insert
+exists = 3 in my_set
+# print(my_set)
 print(my_dict)
