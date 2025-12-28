@@ -47,7 +47,45 @@ print(my_dict)
 
 
 #  O(logN)
-
 arr = [1, 2, 4, 5, 6, 7, 9]
 index = bisect.bisect_left(arr, 5)
 print(index)  # 3
+
+# -------
+
+
+def power(x, n):
+    if n == 0:
+        return 1
+    if n < 0:
+        return 1 / power(x, -n)
+    if n % 2 == 0:
+        half = power(x, n // 2)
+        return half * half
+    else:
+        return x * power(x, n - 1)
+
+
+print(power(2, 10))  # 1024
+
+# ---binary search---------------
+
+
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+# example & pattern of useage
+
+
+arr = [1, 3, 5, 7, 9, 11, 13]
+print(binary_search(arr, 7))  # 3
+print(binary_search(arr, 10))  # -1
