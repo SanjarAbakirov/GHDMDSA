@@ -99,3 +99,4 @@ for i in range(len(arr)):
 
 
 # --------
+arr = ["A", "B", "C"]
