@@ -100,5 +100,5 @@ for i in range(len(arr)):
 
 # --------
 arr = ["A", "B", "C"]
-dict_from_list2 = {i: val i, val in enumerate(arr)}
+dict_from_list2 = {i: val for i, val in enumerate(arr)}
 print(dict_from_list2)
