@@ -89,3 +89,6 @@ def binary_search(arr, target):
 arr = [1, 3, 5, 7, 9, 11, 13]
 print(binary_search(arr, 7))  # 3
 print(binary_search(arr, 10))  # -1
+# -----------O(N)
+
+dict_from_list = {i: val for i, val in enumerate(arr)}
