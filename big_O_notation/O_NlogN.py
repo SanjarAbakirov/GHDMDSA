@@ -10,3 +10,6 @@ def merge_sort(arr):
     right = merge_sort(right)
 # now act likely O(n)
     return merge_sort(left, right)
+
+
+arr = [1, 4, 9, 5, 3, 8, 2, 1]
