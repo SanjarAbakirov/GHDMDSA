@@ -84,9 +84,7 @@
 #             right = mid - 1
 #     return -1
 
-# # example & pattern of useage
-
-
+# example & pattern of useage
 arr = [1, 3, 5, 7, 9, 11, 13]
 print(binary_search(arr, 7))  # 3
 print(binary_search(arr, 10))  # -1
