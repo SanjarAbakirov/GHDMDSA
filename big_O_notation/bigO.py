@@ -72,7 +72,7 @@
 # ---binary search---------------
 
 
-def binary_search(arr, target):
+def binary_search2(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
         mid = (left + right) // 2
@@ -87,8 +87,8 @@ def binary_search(arr, target):
 
 # example & pattern of useage
 arr = [1, 3, 5, 7, 9, 11, 13]
-print(binary_search(arr, 7))  # 3
-print(binary_search(arr, 10))  # -1
+print(binary_search2(arr, 7))  # 3
+print(binary_search2(arr, 10))  # -1
 
 # -----------O(N)
 # example:
