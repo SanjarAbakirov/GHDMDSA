@@ -31,20 +31,20 @@
 # print(my_list)
 # ---------------
 
-# import bisect
-# my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
-# my_set = {1, 2, 3, 4, 5}
-# # O(1) in average case
-# my_dict['grape'] = 15  # insert
-# value = my_dict['apple']  # receiving 5
-# exists = 'banana' in my_dict
+import bisect
+my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
+my_set = {1, 2, 3, 4, 5}
+# O(1) in average case
+my_dict['grape'] = 15  # insert
+value = my_dict['apple']  # receiving 5
+exists = 'banana' in my_dict
 
-# print(my_dict)
+print(my_dict)
 
-# my_set.add(6)  # insert
-# exists = 3 in my_set
-# # print(my_set)
-# print(my_dict)
+my_set.add(6)  # insert
+exists = 3 in my_set
+# print(my_set)
+print(my_dict)
 
 
 #  O(logN)
