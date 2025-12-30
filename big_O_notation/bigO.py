@@ -87,9 +87,10 @@
 # # example & pattern of useage
 
 
-# arr = [1, 3, 5, 7, 9, 11, 13]
-# print(binary_search(arr, 7))  # 3
-# print(binary_search(arr, 10))  # -1
+arr = [1, 3, 5, 7, 9, 11, 13]
+print(binary_search(arr, 7))  # 3
+print(binary_search(arr, 10))  # -1
+
 # -----------O(N)
 # example:
 
