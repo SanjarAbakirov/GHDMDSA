@@ -70,8 +70,6 @@
 # print(power(2, 10))  # 1024
 
 # ---binary search---------------
-
-
 def binary_search2(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
