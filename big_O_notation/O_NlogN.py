@@ -12,3 +12,19 @@
 #     return merge_sort(left, right)
 
 # arr = [1, 4, 9, 5, 3, 8, 2, 1]
+
+# how merge() fn works
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            i += 1
+        result.extend(left[i:])
+        result.extend(right[j:])
+        return result
