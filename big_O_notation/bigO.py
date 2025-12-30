@@ -31,50 +31,86 @@
 # print(my_list)
 # ---------------
 
-import bisect
-my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
-my_set = {1, 2, 3, 4, 5}
-# O(1) in average case
-my_dict['grape'] = 15  # insert
-value = my_dict['apple']  # receiving 5
-exists = 'banana' in my_dict
+# import bisect
+# my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
+# my_set = {1, 2, 3, 4, 5}
+# # O(1) in average case
+# my_dict['grape'] = 15  # insert
+# value = my_dict['apple']  # receiving 5
+# exists = 'banana' in my_dict
+
 # print(my_dict)
 
-my_set.add(6)  # insert
-exists = 3 in my_set
-# print(my_set)
-print(my_dict)
+# my_set.add(6)  # insert
+# exists = 3 in my_set
+# # print(my_set)
+# print(my_dict)
 
 
 #  O(logN)
-arr = [1, 2, 4, 5, 6, 7, 9]
-index = bisect.bisect_left(arr, 5)
-print(index)  # 3
+# arr = [1, 2, 4, 5, 6, 7, 9]
+# index = bisect.bisect_left(arr, 5)
+# print(index)  # 3
 
-# -------
-
-
-def power(x, n):
-    if n == 0:
-        return 1
-    if n < 0:
-        return 1 / power(x, -n)
-    if n % 2 == 0:
-        half = power(x, n // 2)
-        return half * half
-    else:
-        return x * power(x, n - 1)
+# -------------
 
 
-print(power(2, 10))  # 1024
+# def power(x, n):
+#     if n == 0:
+#         return 1
+#     if n < 0:
+#         return 1 / power(x, -n)
+#     if n % 2 == 0:
+#         half = power(x, n // 2)
+#         return half * half
+#     else:
+#         return x * power(x, n - 1)
+
+
+# print(power(2, 10))  # 1024
 
 # ---binary search---------------
+
+
+# def binary_search(arr, target):
+#     left, right = 0, len(arr) - 1
+#     while left <= right:
+#         mid = (left + right) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             left = mid + 1
+#         else:
+#             right = mid - 1
+#     return -1
+
+# # example & pattern of useage
+
+
+# arr = [1, 3, 5, 7, 9, 11, 13]
+# print(binary_search(arr, 7))  # 3
+# print(binary_search(arr, 10))  # -1
+# -----------O(N)
+
+# dict_from_list = {i: val for i, val in enumerate(arr)}
+
+# dict_from_list1 = {}
+# for i in range(len(arr)):
+#     dict_from_list1[i] = arr[i]
+
+
+# --------
+arr = ["A", "B", "C"]
+dict_from_list2 = {i: val for i, val in enumerate(arr)}
+print(dict_from_list2)
+
+# -----------O(N)----
 
 
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left + right)//2
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
@@ -83,24 +119,6 @@ def binary_search(arr, target):
             right = mid - 1
     return -1
 
-# example & pattern of useage
 
-
-arr = [1, 3, 5, 7, 9, 11, 13]
-print(binary_search(arr, 7))  # 3
-print(binary_search(arr, 10))  # -1
-# -----------O(N)
-
-dict_from_list = {i: val for i, val in enumerate(arr)}
-
-dict_from_list1 = {}
-for i in range(len(arr)):
-    dict_from_list1[i] = arr[i]
-
-
-# --------
-arr = ["A", "B", "C"]
-dict_from_list2 = {i: val for i, val in enumerate(arr)}
-print(dict_from_list2)
-
-# -----------
+a = binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 7)
+print(a)
