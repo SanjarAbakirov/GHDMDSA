@@ -31,7 +31,7 @@ def merge(left, right):
         result.extend(right[j:])
         return result
 
-        print(result)
+    print(result)
 
 
 # --------------O(1) constant--------
