@@ -41,3 +41,4 @@ for i in range(len(arr)):
 
 result = dict_from_list1
 print(result)
+print(dict_from_list)
