@@ -18,7 +18,7 @@ arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
 
 def merge(left, right):
-    result0 = []
+    result = []
     i = j = 0
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
@@ -29,9 +29,9 @@ def merge(left, right):
             i += 1
         result.extend(left[i:])
         result.extend(right[j:])
-        return result0
+        return result
 
-    print(result0)
+    print(result)
 
 
 # --------------O(1) constant--------
