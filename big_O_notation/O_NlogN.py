@@ -32,6 +32,9 @@ def merge(left, right):
         return result
 
 
+result0 = merge
+print(result0)
+
 # --------------O(1) constant--------
 dict_from_list = {i: val for i, val in enumerate(arr)}
 
