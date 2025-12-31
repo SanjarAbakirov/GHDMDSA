@@ -18,7 +18,7 @@ arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
 
 def merge(left, right):
-    result = []
+    result0 = []
     i = j = 0
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
@@ -31,9 +31,8 @@ def merge(left, right):
         result.extend(right[j:])
         return result
 
+    print(result0)
 
-result0 = merge
-print(result0)
 
 # --------------O(1) constant--------
 dict_from_list = {i: val for i, val in enumerate(arr)}
