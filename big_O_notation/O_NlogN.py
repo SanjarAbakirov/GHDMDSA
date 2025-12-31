@@ -44,3 +44,7 @@ for i in range(len(arr)):
 result1 = dict_from_list1
 print(result1)
 print(dict_from_list)
+
+# ----O(1)----
+students = ["ann", "boris", "victor", "galina"]
+students_ids = {id: name for id, name in enumerate(students, start=100)}
