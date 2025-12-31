@@ -38,3 +38,6 @@ dict_from_list = {i: val for i, val in enumerate(arr)}
 dict_from_list1 = {}
 for i in range(len(arr)):
     dict_from_list1[i] = arr[i]
+
+result = dict_from_list1
+print(result)
