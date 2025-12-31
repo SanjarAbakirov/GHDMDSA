@@ -29,7 +29,7 @@ def merge(left, right):
             i += 1
         result.extend(left[i:])
         result.extend(right[j:])
-        return result
+        return result0
 
     print(result0)
 
