@@ -12,7 +12,8 @@ def merge_sort(arr):
     return merge_sort(left, right)
 
 
-arr = [1, 4, 9, 5, 3, 8, 2, 1]
+a = merge_sort(arr=[1, 4, 9, 5, 3, 8, 2, 1])
+
 
 # how merge() fn works
 
