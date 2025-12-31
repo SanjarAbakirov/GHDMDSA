@@ -3,9 +3,6 @@ def merge_sort(arr):
         return arr
 
 
-a = merge_sort(arr=[1, 4, 9, 5, 3, 8, 2, 1])
-print(a)
-
 # divide (log N) linear way
 mid = len(arr)//2
 left = arr[:mid]
@@ -15,6 +12,8 @@ left = merge_sort(left)
 right = merge_sort(right)
 # now act likely O(n)
 return merge_sort(left, right)
+
+arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
 
 # how merge() fn works
