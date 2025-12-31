@@ -48,4 +48,4 @@ print(dict_from_list)
 # ----O(1)----
 students = ["ann", "boris", "victor", "galina"]
 students_ids = {id: name for id, name in enumerate(students, start=100)}
-print(students)
+print(students_ids)
