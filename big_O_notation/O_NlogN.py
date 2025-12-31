@@ -30,3 +30,11 @@ def merge(left, right):
         result.extend(left[i:])
         result.extend(right[j:])
         return result
+
+
+# --------------O(1) constant--------
+dict_from_list = {i: val for i, val in enumerate(arr)}
+
+dict_from_list1 = {}
+for i in range(len(arr)):
+    dict_from_list1[i] = arr[i]
