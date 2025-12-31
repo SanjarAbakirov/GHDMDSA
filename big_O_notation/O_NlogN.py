@@ -41,6 +41,6 @@ dict_from_list1 = {}
 for i in range(len(arr)):
     dict_from_list1[i] = arr[i]
 
-result = dict_from_list1
-print(result)
+result1 = dict_from_list1
+print(result1)
 print(dict_from_list)
