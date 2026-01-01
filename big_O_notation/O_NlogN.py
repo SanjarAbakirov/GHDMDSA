@@ -13,7 +13,7 @@ def merge_sort(arr):
     return merge_sort(left, right)
 
 
-# arr = [1, 4, 9, 5, 3, 8, 2, 1]
+arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
 # how merge() fn works O(M log N)
 
@@ -36,14 +36,14 @@ def merge(left, right):
 
 
 # --------------O(1) constant--------
-# dict_from_list = {i: val for i, val in enumerate(arr)}
+dict_from_list = {i: val for i, val in enumerate(arr)}
 
 dict_from_list1 = {}
 for i in range(len(arr)):
     dict_from_list1[i] = arr[i]
 
 result1 = dict_from_list1
-print(result1)
+# print(result1)
 # print(dict_from_list)
 
 # ----O(1)----
