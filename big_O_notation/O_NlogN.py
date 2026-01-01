@@ -57,7 +57,7 @@ goods_ids = {id: item for id, item in enumerate(goods)}
 # print(goods_ids)
 
 # -----O(N log N)-------
-arr = [45, 8, 91, 87, 1, 4, 2, 9, 7, 0, 3]
+arr = [45, 8, 91, 87, 1, 4, 2, 9, 7, 0, 3, 6]
 
 
 def sort_and_merge(arr):
