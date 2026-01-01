@@ -69,7 +69,3 @@ def sort_and_merge(arr):
     left = sort_and_merge(left)
     right = sort_and_merge(right)
     return sort_and_merge(left, right)
-
-
-a = sort_and_merge
-print(a)
