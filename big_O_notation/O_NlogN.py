@@ -51,7 +51,7 @@ students = ["ann", "boris", "victor", "galina"]
 students_ids = {id: name for id, name in enumerate(students, start=100)}
 print(students_ids)
 
-# --------
+# ------O(1)----
 goods = {"shues", "t-shorts", "throusers", "caps", "skirts"}
 goods_ids = {id: item for id, item in enumerate(goods)}
 print(goods_ids)
