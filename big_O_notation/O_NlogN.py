@@ -1,3 +1,4 @@
+# ----O (N log N)----
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -14,7 +15,7 @@ def merge_sort(arr):
 
 arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
-# how merge() fn works
+# how merge() fn works O(M log N)
 
 
 def merge(left, right):
@@ -49,3 +50,8 @@ print(dict_from_list)
 students = ["ann", "boris", "victor", "galina"]
 students_ids = {id: name for id, name in enumerate(students, start=100)}
 print(students_ids)
+
+# --------
+goods = {"shues", "t-shorts", "throusers", "caps", "skirts"}
+goods_ids = {id: item for id, item in enumerate(goods)}
+print(goods_ids)
