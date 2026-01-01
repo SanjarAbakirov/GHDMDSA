@@ -36,7 +36,7 @@ def merge(left, right):
 
 
 # --------------O(1) constant--------
-dict_from_list = {i: val for i, val in enumerate(arr)}
+# dict_from_list = {i: val for i, val in enumerate(arr)}
 
 dict_from_list1 = {}
 for i in range(len(arr)):
