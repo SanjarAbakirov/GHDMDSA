@@ -32,7 +32,7 @@ def merge(left, right):
         result.extend(right[j:])
         return result
 
-    print(result)
+    # print(result)
 
 
 # --------------O(1) constant--------
@@ -44,18 +44,18 @@ for i in range(len(arr)):
 
 result1 = dict_from_list1
 print(result1)
-print(dict_from_list)
+# print(dict_from_list)
 
 # ----O(1)----
 students = ["ann", "boris", "victor", "galina"]
 students_ids = {id: name for id, name in enumerate(students, start=100)}
-print(students_ids)
+# print(students_ids)
 
 # ------O(1)----
 goods = {"shues", "t-shorts", "throusers", "caps", "skirts"}
 goods_ids = {id: item for id, item in enumerate(goods)}
-print(goods_ids)
+# print(goods_ids)
 
 # -----O(N log N)-------
-arr = [45, 8, 91, 87, 1, 4, 2, 9, 7, 0, 3]
-def sort_and_merge(arr)
+# arr = [45, 8, 91, 87, 1, 4, 2, 9, 7, 0, 3]
+# def sort_and_merge(arr)
