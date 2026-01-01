@@ -62,5 +62,5 @@ goods_ids = {id: item for id, item in enumerate(goods)}
 
 
 arr = ["eshmat", "samat", "murat", "azat"]
-names_ids = {ids: name for ids, name in enumerate(arr)}
+names_ids = {ids: name for ids, name in enumerate(arr, start=5)}
 print(names_ids)
