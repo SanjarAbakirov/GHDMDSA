@@ -13,7 +13,7 @@ def merge_sort(arr):
     return merge_sort(left, right)
 
 
-arr = [1, 4, 9, 5, 3, 8, 2, 1]
+# arr = [1, 4, 9, 5, 3, 8, 2, 1]
 
 # how merge() fn works O(M log N)
 
@@ -64,3 +64,5 @@ def sort_and_merge(arr):
     if len(arr) <= 1:
         return arr
     mid = len(arr)//2
+    left = arr[:mid]
+    right = arr[mid:]
