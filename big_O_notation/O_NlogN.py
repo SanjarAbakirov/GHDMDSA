@@ -55,3 +55,5 @@ print(students_ids)
 goods = {"shues", "t-shorts", "throusers", "caps", "skirts"}
 goods_ids = {id: item for id, item in enumerate(goods)}
 print(goods_ids)
+
+# -----O(N log N)-------
