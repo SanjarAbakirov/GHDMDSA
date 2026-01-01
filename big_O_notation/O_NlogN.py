@@ -74,3 +74,4 @@ def sort_and_merge(arr):
 
 def merge_arr(left, right):
     result = []
+    i = j = 0
