@@ -66,3 +66,5 @@ def sort_and_merge(arr):
     mid = len(arr)//2
     left = arr[:mid]
     right = arr[mid:]
+    left = sort_and_merge(left)
+    right = sort_and_merge(right)
