@@ -67,6 +67,6 @@ def sort_and_merge(arr):
     left = arr[:mid]
     right = arr[mid:]
     # recurcion sort both sides
-    left = sort_and_merge(left)  # 45, 8, 91,    87, 1, 4
-    right = sort_and_merge(right)  # 2, 9, 7,    0, 3, 6
+    left = sort_and_merge(left)  # 45, 8, 91, 87, 1, 4
+    right = sort_and_merge(right)  # 2, 9, 7, 0, 3, 6
     return sort_and_merge(left, right)
