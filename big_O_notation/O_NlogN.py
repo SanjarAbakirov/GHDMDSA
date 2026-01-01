@@ -72,4 +72,5 @@ def sort_and_merge(arr):
     return sort_and_merge(left, right)  # sort_and_merge([45], [8])
 
 
-result = []
+def merge_arr(left, right):
+    result = []
