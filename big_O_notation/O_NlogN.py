@@ -63,3 +63,4 @@ arr = [45, 8, 91, 87, 1, 4, 2, 9, 7, 0, 3]
 def sort_and_merge(arr):
     if len(arr) <= 1:
         return arr
+    mid = len(arr)//2
