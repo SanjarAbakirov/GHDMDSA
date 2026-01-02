@@ -90,5 +90,5 @@ def merge_arr(left, right):
     return result
 
 
-sorted_arr = sort_and_merge()
+sorted_arr =
 print(sorted_arr)
