@@ -72,13 +72,13 @@ def sort_and_merge(arr):
     # recurcion sort both sides
     left = sort_and_merge(left)  # 45, 8, 91, 87, 1, 4
     right = sort_and_merge(right)  # 2, 9, 7, 0, 3, 6
-    return sort_and_merge(left, right)  # sort_and_merge([45], [8])
+    return merge_arr(left, right)  # sort_and_merge([45], [8])
 
 
 def merge_arr(left, right):
-    result = []
+    result = []s
     i = j = 0
-    while i < arr(left) and j < len(right):
+    while i < len(left) and j < len(right):
         if left[i] <= right[j]:
             result.append(left[i])
             i += 1
