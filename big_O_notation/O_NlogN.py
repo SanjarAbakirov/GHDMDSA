@@ -70,8 +70,10 @@ def sort_and_merge(arr):
     left = sort_and_merge(left)  # 45, 8, 91, 87, 1, 4
     right = sort_and_merge(right)  # 2, 9, 7, 0, 3, 6
     return sort_and_merge(left, right)  # sort_and_merge([45], [8])
-    a = sort_and_merge(left, right)
-    print(a)
+
+
+a = sort_and_merge(left, right)
+print(a)
 
 
 def merge_arr(left, right):
