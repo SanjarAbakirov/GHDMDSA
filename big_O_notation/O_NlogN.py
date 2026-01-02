@@ -91,3 +91,4 @@ def merge_arr(left, right):
 
 
 # ----
+>> > print(test)
