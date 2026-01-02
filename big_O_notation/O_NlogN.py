@@ -91,4 +91,3 @@ def merge_arr(left, right):
 
 
 # ----
-print(sys.version)
