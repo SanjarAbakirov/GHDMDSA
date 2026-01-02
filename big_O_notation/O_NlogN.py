@@ -87,4 +87,4 @@ def merge_arr(left, right):
     return result
 
 
-print(arr[i])
+print()
