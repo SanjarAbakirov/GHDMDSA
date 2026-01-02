@@ -86,4 +86,4 @@ def merge_arr(left, right):
         result.extend(right[j:])
         return result
     a = result
-    print(merge_arr)
+    print(merge_arr(arr))
