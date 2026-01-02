@@ -73,6 +73,7 @@ def sort_and_merge(arr):
 
 
 def merge_arr(left, right):
+    a = 0
     result = []
     i = j = 0
     while i < arr(left) and j < len(right):
@@ -85,7 +86,5 @@ def merge_arr(left, right):
         result.extend(left[i:])
         result.extend(right[j:])
     return result
-
-
-a = result
-print(a)
+    a = result
+    print(a)
