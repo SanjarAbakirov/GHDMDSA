@@ -1,4 +1,7 @@
 # ----O (N log N)----
+import sys
+
+
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -85,3 +88,7 @@ def merge_arr(left, right):
         result.extend(left[i:])
         result.extend(right[j:])
     return result
+
+
+# ----
+print(sys.version)
