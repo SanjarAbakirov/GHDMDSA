@@ -72,6 +72,9 @@ def sort_and_merge(arr):
     return sort_and_merge(left, right)  # sort_and_merge([45], [8])
 
 
+print(sort_and_merge(left, right))
+
+
 def merge_arr(left, right):
     a = 0
     result = []
