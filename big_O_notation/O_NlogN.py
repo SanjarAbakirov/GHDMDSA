@@ -76,7 +76,7 @@ def sort_and_merge(arr):
 
 
 def merge_arr(left, right):
-    result = []s
+    result = []
     i = j = 0
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
