@@ -89,3 +89,8 @@ def merge_arr(left, right):
     result.extend(right[j:])
 
     return result
+
+
+sorted_arr = sort_and_merge(arr)
+print("original array", arr)
+print("sorted array", sorted_arr)
