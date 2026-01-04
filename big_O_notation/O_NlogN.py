@@ -102,15 +102,15 @@ arr_two = [34, 89, 25, 33]
 
 def sort_two_arr(arr_one, arr_two):
     result = []
-    i = j = 0
-    while i < len(left) and j < len(right):
-        if left[i] <= right[j]:
-            result.append(left[i])
-            i += 1
+    a = b = 0
+    while a < len(arr_one) and b < len(arr_two):
+        if arr_one[a] <= arr_two[b]:
+            result.append(arr_one[a])
+            a += 1
         else:
-            result.append(right[j])
-            j += 1
-    result.extend(left[i:])
-    result.extend(right[j:])
+            result.append(arr_two[b])
+            b += 1
+    result.extend(arr_one[a:])
+    result.extend(arr_two[b:])
 
     return result
