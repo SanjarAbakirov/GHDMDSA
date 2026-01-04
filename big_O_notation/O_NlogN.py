@@ -92,11 +92,11 @@ def merge_arr(left, right):
 
 
 sorted_arr = sort_and_merge(arr)
-print("original array", arr)
-print("sorted array", sorted_arr)
+# print("original array", arr)
+# print("sorted array", sorted_arr)
 
 # --------------------
-arr_one = [34, 37, 90, 12]
+arr_one = [35, 37, 90, 12]
 arr_two = [34, 89, 25, 33]
 
 
@@ -118,3 +118,4 @@ def sort_two_arr(arr_one, arr_two):
 
 sort_two_arr(arr_one, arr_two)
 sorted_arrs = sort_two_arr(arr_one, arr_two)
+print(f"Sorted array", sorted_arrs)
