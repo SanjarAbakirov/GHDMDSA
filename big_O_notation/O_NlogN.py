@@ -96,7 +96,7 @@ print("original array", arr)
 print("sorted array", sorted_arr)
 
 # --------------------
-arr_one = [12, 34, 37, 90]
+arr_one = [34, 37, 90, 12]
 arr_two = [34, 89, 25, 33]
 
 
@@ -114,3 +114,7 @@ def sort_two_arr(arr_one, arr_two):
     result.extend(arr_two[b:])
 
     return result
+
+
+sort_two_arr(arr_one, arr_two)
+sorted_arrs = sort_two_arr(arr_one, arr_two)
