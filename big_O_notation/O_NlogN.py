@@ -94,3 +94,23 @@ def merge_arr(left, right):
 sorted_arr = sort_and_merge(arr)
 print("original array", arr)
 print("sorted array", sorted_arr)
+
+# --------------------
+arr_one = [12, 34, 37, 90]
+arr_two = [34, 89, 25, 33]
+
+
+def sort_two_arr(arr_one, arr_two):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+
+    return result
