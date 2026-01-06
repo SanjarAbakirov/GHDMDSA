@@ -39,18 +39,18 @@ my_dict['grape'] = 15  # insert
 value = my_dict['apple']  # receiving 5
 exists = 'banana' in my_dict
 
-print(my_dict)
+# print(my_dict)
 
 my_set.add(6)  # insert
 exists = 3 in my_set
 # print(my_set)
-print(my_dict)
+# print(my_dict)
 
 
 #  O(logN)
 arr = [1, 2, 4, 5, 6, 7, 9]
 index = bisect.bisect_left(arr, 5)
-print(index)  # 3
+# print(index)  # 3
 
 # -------------
 
@@ -85,8 +85,8 @@ def binary_search2(arr, target):
 
 # example & pattern of useage
 arr = [1, 3, 5, 7, 9, 11, 13]
-print(binary_search2(arr, 7))  # 3
-print(binary_search2(arr, 10))  # -1
+# print(binary_search2(arr, 7))  # 3
+# print(binary_search2(arr, 10))  # -1
 
 # -----------O(N)
 # example:
@@ -100,7 +100,7 @@ print(binary_search2(arr, 10))  # -1
 # --------
 arr = ["A", "B", "C"]
 dict_from_list2 = {i: val for i, val in enumerate(arr)}
-print(dict_from_list2)
+# print(dict_from_list2)
 
 # -----------O(N)----
 
@@ -119,4 +119,4 @@ def binary_search(arr, target):
 
 
 a = binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 7)
-print(a)
+# print(a)
