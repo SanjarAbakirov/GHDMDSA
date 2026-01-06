@@ -131,7 +131,7 @@ def find_all_divisors(n: int) -> list:
     divisors = []
 
     # Идем только до √n
-    for i in range(1, int(math.isqrt(n)) + 1):
+    for i in range(1, int(math.isqrt(n)) + 1):  # for i in range(1, 7)
         if n % i == 0:
             divisors.append(i)
             # Добавляем парный делитель (кроме случая i = n/i)
