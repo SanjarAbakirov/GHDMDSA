@@ -108,7 +108,7 @@ def separator(arr_pr):
     # recurcion sort both sides
     left = sort_and_merge(left)
     right = sort_and_merge(right)
-    return merge_arr(left, right)  # sort_and_merge([45], [8])
+    return merge_arr(left, right)
 
 
 def sort_two_arr(left, right):
