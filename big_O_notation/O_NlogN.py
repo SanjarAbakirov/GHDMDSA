@@ -127,6 +127,6 @@ def sort_two_arr(left, right):
     return result
 
 
-sort_two_arr(arr_one, arr_two)
+final = separator(arr_pr)
 sorted_arrs = sort_two_arr(arr_one, arr_two)
 print(f"Sorted array", sorted_arrs)
