@@ -96,22 +96,33 @@ sorted_arr = sort_and_merge(arr)
 # print("sorted array", sorted_arr)
 
 # --------------------
-arr_one = [35, 37, 90, 12]
-arr_two = [34, 89, 25, 33]
+arr_pr = [35, 37, 90, 12, 34, 89, 25, 33]
 
 
-def sort_two_arr(arr_one, arr_two):
+def separator(arr_pr):
+    if len(arr_pr) <= 1:
+        return arr_pr
+    mid = len(arr_pr)//2
+    left = arr_pr[:mid]
+    right = arr_pr[mid:]
+    # recurcion sort both sides
+    left = sort_and_merge(left)  # 45, 8, 91, 87, 1, 4
+    right = sort_and_merge(right)  # 2, 9, 7, 0, 3, 6
+    return merge_arr(left, right)  # sort_and_merge([45], [8])
+
+
+def sort_two_arr(left, right):
     result = []
     a = b = 0
-    while a < len(arr_one) and b < len(arr_two):
-        if arr_one[a] <= arr_two[b]:
-            result.append(arr_one[a])
+    while a < len(left) and b < len(right):
+        if left[a] <= right[b]:
+            result.append(left[a])
             a += 1
         else:
-            result.append(arr_two[b])
+            result.append(right[b])
             b += 1
-    result.extend(arr_one[a:])
-    result.extend(arr_two[b:])
+    result.extend(left[a:])
+    result.extend(right[b:])
 
     return result
 
