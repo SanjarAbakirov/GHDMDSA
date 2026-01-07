@@ -171,3 +171,5 @@ def twoSum(nums, target):
         if complement in hashmap:  # Проверка занимает O(1) в среднем
             return [hashmap[complement], i]
         hashmap[num] = i
+
+# -------------------
