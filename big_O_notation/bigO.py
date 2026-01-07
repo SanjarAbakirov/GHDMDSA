@@ -144,3 +144,13 @@ def find_all_divisors(n: int) -> list:
 # Пример
 print(find_all_divisors(36))  # [1, 2, 3, 4, 6, 9, 12, 18, 36]
 print(find_all_divisors(17))  # [1, 17]
+
+# --------------arr-----------
+
+
+def twoSum(nums, target):
+    n = len(nums)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if nums[i] + nums[j] == target:
+                return [i, j]
