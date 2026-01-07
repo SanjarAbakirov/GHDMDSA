@@ -145,7 +145,7 @@ def find_all_divisors(n: int) -> list:
 print(find_all_divisors(36))  # [1, 2, 3, 4, 6, 9, 12, 18, 36]
 print(find_all_divisors(17))  # [1, 17]
 
-# --------------arr-----------
+# -------------Brute Force-arr-----------
 
 
 def twoSum(nums, target):
