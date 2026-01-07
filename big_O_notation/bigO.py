@@ -144,7 +144,13 @@ def find_all_divisors(n: int) -> list:
 # Пример
 print(find_all_divisors(36))  # [1, 2, 3, 4, 6, 9, 12, 18, 36]
 print(find_all_divisors(17))  # [1, 17]
-
+# --------------------------------------
+# Two Sum (LeetCode #1)
+# Условие:
+# Дан массив целых чисел nums и целое число target. Верните индексы двух чисел, сумма которых равна target.
+# Можно считать, что для каждого входного массива существует ровно одно решение.
+# Нельзя использовать один и тот же элемент дважды.
+# Ответ можно вернуть в любом порядке.
 # -------------Brute Force-arr-----------
 
 
@@ -154,3 +160,14 @@ def twoSum(nums, target):
         for j in range(i + 1, n):
             if nums[i] + nums[j] == target:
                 return [i, j]
+
+
+# -----hastag table------
+
+def twoSum(nums, target):
+    hashmap = {}  # Значение: индекс
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in hashmap:  # Проверка занимает O(1) в среднем
+            return [hashmap[complement], i]
+        hashmap[num] = i
