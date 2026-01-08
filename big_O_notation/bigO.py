@@ -173,3 +173,21 @@ def twoSum(nums, target):
         hashmap[num] = i
 
 # -------------------
+# Input: n = 10
+# Output: 4  # Простые числа меньше 10: 2, 3, 5, 7
+
+
+def countPrimes(n):
+    def is_prime(x):
+        if x < 2:
+            return False
+        for i in range(2, x):  # Проверка всех делителей
+            if x % i == 0:
+                return False
+        return True
+
+    count = 0
+    for num in range(2, n):
+        if is_prime(num):
+            count += 1
+    return count
