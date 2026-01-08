@@ -320,11 +320,11 @@ def countPrimes(n):
         if is_prime(num):
             count += 1
     return count
-Сложность: O(n²) - очень медленно.
+# Сложность: O(n²) - очень медленно.
 
-Решение 2: Улучшенная проверка - O(n√n)
+# Решение 2: Улучшенная проверка - O(n√n)
 
-python
+# python
 def countPrimes(n):
     def is_prime(x):
         if x < 2:
