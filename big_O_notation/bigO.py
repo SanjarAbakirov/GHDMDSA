@@ -350,3 +350,47 @@ def countPrimes(n):
 # Проверка одного числа: O(√x)
 # Для всех чисел до n: O(∑ √x) для x от 2 до n
 # Это примерно O(n√n) в целом
+
+
+# ---------------------
+
+def search(nums, target):
+    """
+    Реализация бинарного поиска с логарифмической сложностью O(log n)
+
+    Args:
+        nums: отсортированный список целых чисел
+        target: искомое значение
+
+    Returns:
+        Индекс target или -1 если не найден
+    """
+    left, right = 0, len(nums) - 1
+
+    while left <= right:
+        # Находим средний индекс
+        mid = left + (right - left) // 2  # Предотвращает переполнение
+
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+
+
+# Пример использования
+if __name__ == "__main__":
+    # Тест 1
+    nums1 = [-1, 0, 3, 5, 9, 12]
+    target1 = 9
+    print(f"Массив: {nums1}")
+    print(f"Индекс {target1}: {search(nums1, target1)}")  # Output: 4
+
+    # Тест 2
+    nums2 = [-1, 0, 3, 5, 9, 12]
+    target2 = 2
+    print(f"\nМассив: {nums2}")
+    print(f"Индекс {target2}: {search(nums2, target2)}")  # Output: -1
