@@ -317,7 +317,6 @@ def countPrimes(n):
     return count
 
 # Сложность: O(n²) - очень медленно.
-
 # Решение 2: Улучшенная проверка - O(n√n)
 
 # python
