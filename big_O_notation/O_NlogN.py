@@ -130,7 +130,7 @@ def sort_two_arr(left, right):
 
 final = separator(arr_pr)
 # sorted_arrs = sort_two_arr(arr_one, arr_two)
-print(f"Sorted array", final)
+# print(f"Sorted array", final)
 
 # ------------------big O notation ----- root complexity-----
 
@@ -174,3 +174,7 @@ def frind_divisors_optimized(n):
 
     divisors_1.sort()
     return divisors_1
+
+
+x = frind_divisors_optimized(49)
+print(x)
