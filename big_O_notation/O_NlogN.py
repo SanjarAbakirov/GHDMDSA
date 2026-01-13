@@ -161,3 +161,9 @@ def find_divisions(n):
 def frind_divisors_optimized(n):
     # math.isqrt()
     if n <= 0:
+        return []
+
+    divisors_1 = []
+    sqrt_n = math.isqrt(n)
+
+    for i in range(1, sqrt_n + 1):
