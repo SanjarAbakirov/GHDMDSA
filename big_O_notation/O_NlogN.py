@@ -149,3 +149,9 @@ def find_divisions(n):
     while i * i <= n:
         if n % i == 0:
             divisors.append(i)
+# if divisors is not square root adding pare divisor
+        i += 1
+
+#  sort results
+    divisors.sort()
+    return divisors
