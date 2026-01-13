@@ -172,6 +172,5 @@ def frind_divisors_optimized(n):
             if i != n // i:
                 divisors_1.append(n // i)
 
-    divisors_1.sort(
-        return divisors_1
-    )
+    divisors_1.sort()
+    return divisors_1
