@@ -168,3 +168,10 @@ def frind_divisors_optimized(n):
 
     for i in range(1, sqrt_n + 1):
         if n % i == 0:
+            divisors_1.append(i)
+            if i != n // i:
+                divisors_1.append(n // i)
+
+    divisors_1.sort(
+        return divisors_1
+    )
