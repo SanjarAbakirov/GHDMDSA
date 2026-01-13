@@ -1,4 +1,5 @@
 # ----O (N log N)----
+import math
 import sys
 
 
@@ -132,3 +133,19 @@ final = separator(arr_pr)
 print(f"Sorted array", final)
 
 # ------------------big O notation ----- root complexity-----
+
+# поиск всех делителей с коренвой сложностью
+
+
+def find_divisions(n):
+    # O(root n complexity)
+    if n <= 0:
+        return []
+
+    divisors = []
+    i = 1
+
+    # iteration only from square num from n
+    while i * i <= n:
+        if n % i == 0:
+            divisors.append(i)
