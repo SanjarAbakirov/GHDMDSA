@@ -177,7 +177,7 @@ def frind_divisors_optimized(n):
 
 
 x = frind_divisors_optimized(49)
-print(x)
+# print(x)
 
 
-# --------------
+# --------------square complexity------
