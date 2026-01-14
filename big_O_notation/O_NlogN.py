@@ -191,5 +191,5 @@ def bubble_sort(arr):
 
 
 numbers = [64, 34, 25, 12, 22, 11, 90]
-print("before sorting" numbers)
-print("after sorting" bubble_sort(numbers.copy()))
+print("before sorting", numbers)
+print("after sorting", bubble_sort(numbers.copy()))
