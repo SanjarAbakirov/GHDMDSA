@@ -209,4 +209,4 @@ def selection_sort(arr):
     return arr
 
 
-numbers = [64, ]
+numbers = [64, 55, 82, 34, 25, 12, 22, 11, 90, 73]
