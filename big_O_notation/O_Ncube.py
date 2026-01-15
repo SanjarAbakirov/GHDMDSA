@@ -8,7 +8,7 @@ class Solution:  # declaring the class
         # nums: List[int] is annotation type for parameter nums
         # nums - name of the parameter
         # List[int] - decret nums to be List of integers
-        # from from typing import List -> imports -> List[List[int]]:
+        # from from typing import List -> imports -> List[List[int]]: the annotaion returned value
         n = len(nums)
         result = []
         for i in range(n - 2):
