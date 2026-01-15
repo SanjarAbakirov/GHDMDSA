@@ -227,3 +227,4 @@ class Solution:
                     triplet = sorted([nums[i], nums[j], nums[k]])
                     if triplet not in result:
                         result.append(triplet)
+    return result
