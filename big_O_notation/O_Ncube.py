@@ -26,5 +26,7 @@ class Solution:  # declaring the class
                                 f"Found zero-sum triplet at positions ({i}, {j}, {k}): {triplet}")
                             print(f"print of founded triplet: {triplet}")
                             result.append(triplet)
+                        else:
+                            print(f" ! Duplicate triplet: {triplet}")
         print(f"final result: {result}")
         return result
