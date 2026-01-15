@@ -2,8 +2,10 @@
 from typing import List
 
 
-class Solution:
+class Solution:  # declaring the class
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # it is a method, self - is mandatory, refer to object
+        # nums: List[int] is annotation type for parameter nums
         n = len(nums)
         result = []
         for i in range(n - 2):
