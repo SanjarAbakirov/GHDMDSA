@@ -16,3 +16,18 @@ def selection_sort(arr):
 numbers = [64, 55, 82, 34, 25, 12, 22, 11, 90, 73]
 print("before sorting", numbers)
 print("after sorting", selection_sort(numbers.copy()))
+
+
+# --------------square complexity------
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):  # if n = 5 than (0, 4)
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j + 1], arr[j]
+        return arr
+
+
+numbers = [64, 34, 25, 12, 22, 11, 90]
+# print("before sorting", numbers)
+# print("after sorting", bubble_sort(numbers.copy()))
