@@ -212,3 +212,9 @@ def selection_sort(arr):
 numbers = [64, 55, 82, 34, 25, 12, 22, 11, 90, 73]
 print("before sorting", numbers)
 print("after sorting", selection_sort(numbers.copy()))
+
+
+# -------cube complexity----------------
+
+class Solution:
+    def threeSum(self, nums: list[int]) -> list[list[list[int]]]
