@@ -93,8 +93,8 @@ def merge_arr(left, right):
 
 
 sorted_arr = sort_and_merge(arr)
-# print("original array", arr)
-# print("sorted array", sorted_arr)
+print("original array", arr)
+print("sorted array", sorted_arr)
 
 # --------N Log N complexity------------
 arr_pr = [35, 37, 90, 12, 34, 89, 25, 33]
