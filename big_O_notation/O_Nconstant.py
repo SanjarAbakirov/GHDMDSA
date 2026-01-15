@@ -1,5 +1,6 @@
 
 # --------------O(1) constant--------
+arr = [23, 4, 5, 9, 1]
 dict_from_list = {i: val for i, val in enumerate(arr)}
 
 dict_from_list1 = {}
