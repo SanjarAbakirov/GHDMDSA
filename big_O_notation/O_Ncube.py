@@ -11,7 +11,7 @@ class Solution:  # declaring the class
         # List[List[int]]: - the method of returned integers
         n = len(nums)
         result = []
-        print(f"\n===Starting threeSum ===")
+        print(f"\n===Starting threeSum===")
         print(f"Input list: {nums}")
 
         for i in range(n - 2):
