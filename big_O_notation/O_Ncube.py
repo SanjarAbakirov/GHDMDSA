@@ -45,3 +45,4 @@ if __name__ == "__main__":
     print("\n" + "="*50 + "\n")
     print("Test 2:")
     test_nums2 = [0, 0, 0]
+    result2 = solution.threeSum(test_nums2)
