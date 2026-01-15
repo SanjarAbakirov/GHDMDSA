@@ -24,4 +24,9 @@ arr = ["A", "B", "C"]
 dict_from_list2 = {i: val for i, val in enumerate(arr)}
 # print(dict_from_list2)
 
-# -----------
+# -----------O(N)
+# example:
+# dict_from_list = {i: val for i, val in enumerate(arr)}
+# dict_from_list1 = {}
+# for i in range(len(arr)):
+#     dict_from_list1[i] = arr[i]
