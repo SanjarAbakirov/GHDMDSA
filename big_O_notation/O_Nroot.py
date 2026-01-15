@@ -39,5 +39,5 @@ def find_divisors_optimized(n):
     return divisors_1
 
 
-x = frind_divisors_optimized(49)
+x = find_divisors_optimized(49)
 print(x)
