@@ -15,6 +15,7 @@ class Solution:  # declaring the class
         print(f"Input list: {nums}")
 
         for i in range(n - 2):
+            print(f"\nCheking i={i} (value: {nums[i]})")
             for j in range(i + 1, n - 1):
                 for k in range(j + 1, n):
                     if nums[i] + nums[j] + nums[k] == 0:
