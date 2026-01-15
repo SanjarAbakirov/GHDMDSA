@@ -8,7 +8,7 @@
 
 
 import math
-import bisect
+
 my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
 my_set = {1, 2, 3, 4, 5}
 # O(1) in average case
@@ -23,11 +23,6 @@ exists = 3 in my_set
 # print(my_set)
 # print(my_dict)
 
-
-#  O(logN)
-arr = [1, 2, 4, 5, 6, 7, 9]
-index = bisect.bisect_left(arr, 5)
-# print(index)  # 3
 
 # -------------
 
