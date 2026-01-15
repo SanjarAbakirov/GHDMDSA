@@ -46,3 +46,14 @@ if __name__ == "__main__":
     print("Test 2:")
     test_nums2 = [0, 0, 0]
     result2 = solution.threeSum(test_nums2)
+
+
+# -----------------
+# class Solution:
+#     def threeSum(self, nums: List[int]) -> List[List[int]]:
+#         print("Hello from threeSum method!")  # <-- вот и print
+#         return [[1, 2, -3]]  # заглушка
+
+# # Использование
+# s = Solution()
+# s.threeSum([1, 2, 3])
