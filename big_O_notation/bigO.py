@@ -57,20 +57,6 @@ arr = [1, 3, 5, 7, 9, 11, 13]
 # print(binary_search2(arr, 7))  # 3
 # print(binary_search2(arr, 10))  # -1
 
-# -----------O(N)
-# example:
-
-# dict_from_list = {i: val for i, val in enumerate(arr)}
-# dict_from_list1 = {}
-# for i in range(len(arr)):
-#     dict_from_list1[i] = arr[i]
-
-
-# --------
-arr = ["A", "B", "C"]
-dict_from_list2 = {i: val for i, val in enumerate(arr)}
-# print(dict_from_list2)
-
 
 # --------------------------------------
 # Two Sum (LeetCode #1)
