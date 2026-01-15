@@ -12,6 +12,7 @@ class Solution:  # declaring the class
         # List[List[int]]: - the method of returned integers
         n = len(nums)
         result = []
+        print(f"Input list: {nums}")
         for i in range(n - 2):
             for j in range(i + 1, n - 1):
                 for k in range(j + 1, n):
