@@ -18,3 +18,8 @@ a = binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 7)
 print(a)
 
 # -----------
+
+
+arr = ["A", "B", "C"]
+dict_from_list2 = {i: val for i, val in enumerate(arr)}
+# print(dict_from_list2)
