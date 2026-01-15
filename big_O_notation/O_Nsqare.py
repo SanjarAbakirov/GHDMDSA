@@ -32,9 +32,8 @@ numbers = [64, 34, 25, 12, 22, 11, 90]
 # print("before sorting", numbers)
 # print("after sorting", bubble_sort(numbers.copy()))
 
-# ------------------------
 
-# ----- quadratic complexity -------
+# ----- square complexity -------
 
 
 def find_all_divisors(n: int) -> list:
