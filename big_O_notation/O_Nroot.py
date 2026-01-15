@@ -24,7 +24,7 @@ def find_divisions(n):
 
 # -----------
 def frind_divisors_optimized(n):
-    # math.isqrt()
+    math.isqrt()
     if n <= 0:
         return []
 
@@ -42,4 +42,4 @@ def frind_divisors_optimized(n):
 
 
 x = frind_divisors_optimized(49)
-# print(x)
+print(x)
