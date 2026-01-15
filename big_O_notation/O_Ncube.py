@@ -40,3 +40,7 @@ if __name__ == "__main__":
     print("Test 1:")
     test_nums = [-1, 0, 1, 2, -1, -4]
     result = solution.threeSum(test_nums)
+
+    # test 2
+    print("\n" + "="*50 + "\n")
+    print("Test 2:")
