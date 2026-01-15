@@ -30,3 +30,13 @@ class Solution:  # declaring the class
                             print(f" ! Duplicate triplet: {triplet}")
         print(f"final result: {result}")
         return result
+
+
+# The example
+if __name__ == "__main__":
+    solution = Solution()
+
+    # test 1
+    print("Test 1:")
+    test_nums = [-1, 0, 1, 2, -1, -4]
+    result = solution.threeSum(test_nums)
