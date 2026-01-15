@@ -32,5 +32,26 @@ numbers = [64, 34, 25, 12, 22, 11, 90]
 # print("before sorting", numbers)
 # print("after sorting", bubble_sort(numbers.copy()))
 
-
 # ------------------------
+
+# ----- quadratic complexity -------
+
+
+def find_all_divisors(n: int) -> list:
+    """Нахождение всех делителей числа за O(√n)"""
+    divisors = []
+
+    # Идем только до √n
+    for i in range(1, int(math.isqrt(n)) + 1):  # for i in range(1, 7)
+        if n % i == 0:
+            divisors.append(i)
+            # Добавляем парный делитель (кроме случая i = n/i)
+            if i != n // i:
+                divisors.append(n // i)
+
+    return sorted(divisors)
+
+
+# Пример
+print(find_all_divisors(36))  # [1, 2, 3, 4, 6, 9, 12, 18, 36]
+print(find_all_divisors(17))  # [1, 17]
