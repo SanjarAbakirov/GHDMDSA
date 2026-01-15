@@ -1,12 +1,10 @@
 # ------------------root complexity-----
 # поиск всех делителей с коренвой сложностью
 
-
 def find_divisions(n):
     # O(root n complexity)
     if n <= 0:
         return []
-
     divisors = []
     i = 1
 
