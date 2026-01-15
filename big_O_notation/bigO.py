@@ -15,7 +15,6 @@ my_set = {1, 2, 3, 4, 5}
 my_dict['grape'] = 15  # insert
 value = my_dict['apple']  # receiving 5
 exists = 'banana' in my_dict
-
 # print(my_dict)
 
 my_set.add(6)  # insert
@@ -91,30 +90,9 @@ def binary_search(arr, target):
 
 
 a = binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 7)
-# print(a)
+print(a)
 
 
-# ----- quadratic complexity -------
-
-
-def find_all_divisors(n: int) -> list:
-    """Нахождение всех делителей числа за O(√n)"""
-    divisors = []
-
-    # Идем только до √n
-    for i in range(1, int(math.isqrt(n)) + 1):  # for i in range(1, 7)
-        if n % i == 0:
-            divisors.append(i)
-            # Добавляем парный делитель (кроме случая i = n/i)
-            if i != n // i:
-                divisors.append(n // i)
-
-    return sorted(divisors)
-
-
-# Пример
-print(find_all_divisors(36))  # [1, 2, 3, 4, 6, 9, 12, 18, 36]
-print(find_all_divisors(17))  # [1, 17]
 # --------------------------------------
 # Two Sum (LeetCode #1)
 # Условие:
