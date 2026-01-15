@@ -265,8 +265,6 @@ def countPrimes(n):
             count += 1
     return count
 
-# Сложность: O(n²) - очень медленно.
-
 
 def search(nums, target):
     """
