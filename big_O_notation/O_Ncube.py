@@ -19,5 +19,5 @@ class Solution:  # declaring the class
                         triplet = sorted([nums[i], nums[j], nums[k]])
                         if triplet not in result:
                             result.append(triplet)
+        print(result)
         return result
-    print(result)
