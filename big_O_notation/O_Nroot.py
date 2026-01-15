@@ -1,5 +1,8 @@
+import math
+
 # ------------------root n complexity-----
 # поиск всех делителей с коренвой сложностью
+
 
 def find_divisions(n):
     if n <= 0:
