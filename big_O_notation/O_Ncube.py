@@ -9,6 +9,7 @@ class Solution:  # declaring the class
         # nums - name of the parameter
         # List[int] - decret nums to be List of integers
         # from from typing import List -> imports -> List[List[int]]: the annotaion returned value
+        # List[List[int]]: - the method of returned integers
         n = len(nums)
         result = []
         for i in range(n - 2):
