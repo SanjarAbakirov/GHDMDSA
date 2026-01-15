@@ -17,6 +17,7 @@ class Solution:  # declaring the class
         for i in range(n - 2):
             print(f"\nCheking i={i} (value: {nums[i]})")
             for j in range(i + 1, n - 1):
+                print(f"\nCheking j={j} (value: {nums[j})")
                 for k in range(j + 1, n):
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
