@@ -22,6 +22,8 @@ class Solution:  # declaring the class
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
                         if triplet not in result:
+                            print(
+                                f"Found zero-sum triplet at positions ({i}, {j}, {k}): {triplet}")
                             print(f"print of founded triplet: {triplet}")
                             result.append(triplet)
         print(f"final result: {result}")
