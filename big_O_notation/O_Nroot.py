@@ -21,6 +21,7 @@ def find_divisions(n):
 
 
 # -----------
+
 def frind_divisors_optimized(n):
     math.isqrt()
     if n <= 0:
