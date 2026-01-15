@@ -20,4 +20,4 @@ class Solution:  # declaring the class
                         if triplet not in result:
                             result.append(triplet)
         return result
-    print(threeSum)
+    print(result)
