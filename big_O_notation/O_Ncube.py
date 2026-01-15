@@ -23,5 +23,5 @@ class Solution:  # declaring the class
                         if triplet not in result:
                             print(f"print of founded triplet: {triplet}")
                             result.append(triplet)
-        print(result)
+        print(f"final result: {result}")
         return result
