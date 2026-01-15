@@ -1,4 +1,3 @@
-# -------cube complexity----------------
 from typing import List
 
 
