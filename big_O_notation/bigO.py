@@ -1,10 +1,3 @@
-# arr = [7, 4, 9, 5, 3, 8, 2, 1]
-# print("cheking", arr)
-# for i in range(len(arr)):
-#     for j in range(len(arr) - 1 - i):
-#         if arr[j] > arr[j + 1]:
-#             arr[j], arr[j + 1] = arr[j + 1], arr[j]
-# print("enhanced arr", arr)
 
 
 my_dict = {'apple': 5, 'banana': 10, 'orange': 7}
